@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping site for Mobiles,Electronics,Furniture,Grocery,Lifestyle,Books &More.Best Offers</title>
+    <link rel="stylesheet" href="">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .flex-all-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        footer {
+            height: 12vh;
+            background-color: black;
+            color: white;
+            font-family: "Lato", sans-serif;
+        }
+
+        header {
+            height: 58px;
+            background-color: black;
+            border: 2px solid red;
+            font-family: "Lato", sans-serif;
+        }
+
+        nav ul li {
+            list-style: none;
+            padding: 0 23px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            color: aqua;
+            font-weight: bold;
+        }
+
+        nav ul {
+            height: 58px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        nav {
+            display: flex;
+
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+
+
+        }
+
+        .logo.img {
+            width: 88px;
+            padding: 0 55px;
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+        }
+
+        .search input {
+            width: 30vw;
+            height: 32px;
+            border-radius: 5px;
+            margin: 0 16px 0 56px;
+            padding: 0 12px;
+        }
+
+        .search button {
+            margin-left: 0%;
+            font-family: "Lato", sans-serif;
+            font-weight: bold;
+        }
+
+        .btn {
+            padding: 5px 10px;
+            color: white;
+            background-color: black;
+            border: 2px solid blue;
+            border-radius: 7px;
+            cursor: pointer;
+        }
+        .carticon{
+            padding:15px;
+            cursor:pointer;
+        }
+        .signin{
+            padding:15px;
+        }
+        .text{
+            display:flex;
+        }
+
+        .container {
+            min-height: calc(100vh - 58px - 12vh);
+        }
+        
+        .slider {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 12px auto auto;
+            overflow: hidden;
+        }
+
+        .slider img {
+            height: 250px;
+        }
+
+        .cart {
+            max-width: 91vw;
+            margin: 37px auto;
+            background-color: white;
+
+        }
+
+        .cart-item {
+            width: 10vw;
+            display: inline-flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 0 15px;
+            cursor:pointer;
+        }
+
+        .cart h2 {
+            font-family: "Lato", sans-serif;
+        }
+
+        .my-1 {
+            margin: 5px 0;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .carts {
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            overflow: scroll;
+        }
+
+        @media screen and(max-width:1000px) {
+            body {
+                background-color: blanchedalmond;
+
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            .logo {
+                justify-content: center;
+                margin: 32px 0;
+            }
+
+            nav ul {
+                justify-content: center;
+                height: 34px;
+            }
+
+            .search {
+                justify-content: center;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav style="display:flex">
+            <div class="logo">
+                <img src="Jiomart-logo-ds2.0.svg" alt="" class="" style="margin: 0 55px;">
+
+
+
+            </div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" name="" id="" placeholder="Search Here">
+                <button class="btn">Search</button>
+            </div>
+            <div class="carticon">
+                <img src="cart-icon.svg" alt="" class="">              
+            </div>
+            <div class="signin">
+                <img src="signin.svg" alt="" class="">
+            </div>
+            <div class="text">
+                <ul>
+                    <li><a href="sign in.html">Sign in</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="slider">
+                <img src="https://source.unsplash.com/1600x160/?ecommerce" alt="" class="" style="height: 300px;">
+
+            </div>
+            <div class="cart">
+                <h2 class="my-2">Join the cricket fun</h2>
+                <div class="carts">
+                    <div class="cart-item">
+                        <img src="bat.jpg" alt="" class="">
+                        <div class="line">
+                            <p class="text-center my-1">Cricket bats</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab now</p>
+
+                        </div>
+
+
+                    </div>
+                    <div class="cart-item">
+                        <img src="ball.jpg" alt="" class="">
+                        <div class="line">
+                            <p class="text-center my-1">Cricket balls</p>
+                            <p class="text-center my-1">Min 50% off</p>
+                            <p class="text-center my-1">Grab now</p>
+
+                        </div>
+
+
+                    </div>
+                    <div class="cart-item">
+                        <img src="gloves.jpg" alt="" class="">
+                        <div class="line">
+                            <p class="text-center my-1">Cricket gloves</p>
+                            <p class="text-center my-1">Min 10% off</p>
+                            <p class="text-center my-1">Grab now</p>
+
+                        </div>
+
+
+                    </div>
+                    <div class="cart-item">
+                        <img src="bells.jpg" alt="" class="">
+                        <div class="line">
+                            <p class="text-center my-1">Cricket bails</p>
+                            <p class="text-center my-1">Min 35% off</p>
+                            <p class="text-center my-1">Grab now</p>
+
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <img src="clothes.jpg" alt="" class="">
+                        <div class="line">
+                            <p class="text-center my-1">Cricket jersey</p>
+                            <p class="text-center my-1">Min 15% off</p>
+                            <p class="text-center my-1">Grab now</p>
+
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <img src="lguard.jpg" alt="" class="">
+                        <div class="line">
+                            <p class="text-center my-1">Cricket l-guard</p>
+                            <p class="text-center my-1">Min 35% off</p>
+                            <p class="text-center my-1">Grab now</p>
+
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <img src="pads.webp" alt="" class="">
+                        <div class="line">
+                            <p class="text-center my-1">Cricket pads</p>
+                            <p class="text-center my-1">Min 25% off</p>
+                            <p class="text-center my-1">Grab now</p>
+
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <img src="helmet.jpg" alt="" class="">
+                        <div class="line">
+                            <p class="text-center my-1">Cricket helmet</p>
+                            <p class="text-center my-1">Min 45% off</p>
+                            <p class="text-center my-1">Grab now</p>
+
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <img src="stump.jpg" alt="" class="">
+                        <div class="line">
+                            <p class="text-center my-1">Cricket stumps</p>
+                            <p class="text-center my-1">Min 55% off</p>
+                            <p class="text-center my-1">Grab now</p>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="cart">
+                    <h2 class="my-2">Western Wear</h2>
+                    <div class="carts">
+                        <div class="cart-item">
+                            <img src="jeans shorts.jpg" alt="" class="">
+                            <div class="line">
+                                <p class="text-center my-1">Shorts</p>
+                                <p class="text-center my-1">Min 30% off</p>
+                                <p class="text-center my-1">Grab now</p>
+
+                            </div>
+
+
+                        </div>
+                        <div class="cart-item">
+                            <img src="onepiece.webp" alt="" class="">
+                            <div class="line">
+                                <p class="text-center my-1">Western one piece</p>
+                                <p class="text-center my-1">Min 50% off</p>
+                                <p class="text-center my-1">Grab now</p>
+
+                            </div>
+
+
+                        </div>
+                        <div class="cart-item">
+                            <img src="crop top.jpg" alt="" class="">
+                            <div class="line">
+                                <p class="text-center my-1">Crop tops</p>
+                                <p class="text-center my-1">Min 10% off</p>
+                                <p class="text-center my-1">Grab now</p>
+
+                            </div>
+
+
+                        </div>
+                        <div class="cart-item">
+                            <img src="jeans.webp" alt="" class="">
+                            <div class="line">
+                                <p class="text-center my-1">Jeans</p>
+                                <p class="text-center my-1">Min 35% off</p>
+                                <p class="text-center my-1">Grab now</p>
+
+                            </div>
+                        </div>
+                        <div class="cart-item">
+                            <img src="skirt.jpg" alt="" class="">
+                            <div class="line">
+                                <p class="text-center my-1">Mini Skirts</p>
+                                <p class="text-center my-1">Min 40%</p>
+                                <p class="text-center my-1">Grab now</p>
+
+                            </div>
+                        </div>
+                        <div class="cart-item">
+                            <img src="jacket.webp" alt="" class="">
+                            <div class="line">
+                                <p class="text-center my-1">Jackets</p>
+                                <p class="text-center my-1">Min 15% off</p>
+                                <p class="text-center my-1">Grab now</p>
+
+                            </div>
+                        </div>
+                        <div class="cart-item">
+                            <img src="jumpsuits.avif" alt="" class="">
+                            <div class="line">
+                                <p class="text-center my-1">Jumpsuits</p>
+                                <p class="text-center my-1">Min 45% off</p>
+                                <p class="text-center my-1">Grab now</p>
+
+                            </div>
+                        </div>
+                        <div class="cart-item">
+                            <img src="coord.webp" alt="" class="">
+                            <div class="line">
+                                <p class="text-center my-1">Co-ord Sets</p>
+                                <p class="text-center my-1">Min 20% off</p>
+                                <p class="text-center my-1">Grab now</p>
+
+                            </div>
+                        </div>
+                        <div class="cart-item">
+                            <img src="tshirts.jpg" alt="" class="">
+                            <div class="line">
+                                <p class="text-center my-1">Tshirts</p>
+                                <p class="text-center my-1">Min 25% off</p>
+                                <p class="text-center my-1">Grab now</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <h2 class="my-2">Beauty,Food,Toys & more</h2>
+                        <div class="carts">
+                            <div class="cart-item">
+                                <img src="gymmm.jpg" alt="" class="">
+                                <div class="line">
+                                    <p class="text-center my-1">Gym Essentials</p>
+                                    <p class="text-center my-1">From Rs 139</p>
+
+                                </div>
+                            </div>
+                            <div class="cart-item">
+                                <img src="yogamat.jpg" alt="" class="">
+                                <div class="line">
+                                    <p class="text-center my-1">Yoga Mat</p>
+                                    <p class="text-center my-1">From 159</p>
+
+
+                                </div>
+
+
+                            </div>
+                            <div class="cart-item">
+                                <img src="stat.jpg" alt="" class="">
+                                <div class="line">
+                                    <p class="text-center my-1">Top selling stationary</p>
+                                    <p class="text-center my-1">From 49</p>
+                                    
+
+                                </div>
+
+
+                            </div>
+                            <div class="cart-item">
+                                <img src="ac.jpg" alt="" class="">
+                                <div class="line">
+                                    <p class="text-center my-1">Action Toys</p>
+                                    <p class="text-center my-1">Upto 70% off</p>
+                                </div>
+                            </div>
+                            <div class="cart-item">
+                                <img src="st.jpg" alt="" class="">
+                                <div class="line">
+                                    <p class="text-center my-1">Soft Toys</p>
+                                    <p class="text-center my-1">Upto 70% off</p>
+                                </div>
+                            </div>
+                            <div class="cart-item">
+                                <img src="remote.jpg" alt="" class="">
+                                <div class="line">
+                                    <p class="text-center my-1">Remote Control Toys</p>
+                                    <p class="text-center my-1">Upto 80% off</p>
+                                </div>
+                            </div>
+                            <div class="cart-item">
+                                <img src="cyc.jpg" alt="" class="">
+                                <div class="line">
+                                    <p class="text-center my-1">Electric Cycles</p>
+                                    <p class="text-center my-1">Upto 40% off</p>
+                                </div>
+                            </div>
+                            <div class="cart-item">
+                                <img src="dryfru.webp" alt="" class="">
+                                <div class="line">
+                                    <p class="text-center my-1">Dry Fruits</p>
+                                    <p class="text-center my-1">Upto 75% off</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="cart">
+                            <h2 class="my-2">Best of Electronics</h2>
+                            <div class="carts">
+                                <div class="cart-item">
+                                    <img src="dell.webp" alt="" class="">
+                                    <div class="line">
+                                        <p class="text-center my-1">Dell keyboard</p>
+                                        <p class="text-center my-1">From Rs 229</p>
+                                    </div>
+                                </div>
+                                <div class="cart-item">
+                                    <img src="wire.jpg" alt="" class="">
+                                    <div class="line">
+                                    <p class="text-center my-1">Top Headphones</p>
+                                        <p class="text-center my-1">Grab now</p>
+                                    </div>
+                                </div>
+                                <div class="cart-item">
+                                    <img src="watch.jpg" alt="" class="">
+                                    <div class="line">
+                                        <p class="text-center my-1">Noise Smartwatches</p>
+                                        <p class="text-center my-1">From Rs 1,099</p>
+                                        <p class="text-center my-1">Grab now</p>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="cart-item">
+                                    <img src="speaker.jpeg" alt="" class="">
+                                    <div class="line">
+                                        <p class="text-center my-1">Mobile Speakers</p>
+                                        <p class="text-center my-1">From Rs 499</p>
+                                        <p class="text-center my-1">Grab now</p>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="cart-item">
+                                    <img src="projector.jpg" alt="" class="">
+                                    <div class="line">
+                                        <p class="text-center my-1">Projectors</p>
+                                        <p class="text-center my-1">From Rs 9,999</p>
+                                        <p class="text-center my-1">Grab now</p>
+                                    </div>
+                                </div>
+                                <div class="cart-item">
+                                    <img src="monitor.jpg" alt="" class="">
+                                    <div class="line">
+                                        <p class="text-center my-1">Monitors</p>
+                                        <p class="text-center my-1">From Rs 8,279</p>
+                                        <p class="text-center my-1">Grab now</p>
+                                    </div>
+                                </div>
+                                <div class="cart-item">
+                                    <img src="mous.jpg" alt="" class="">
+                                    <div class="line">
+                                        <p class="text-center my-1">Mouse</p>
+                                        <p class="text-center my-1">From Rs 999</p>
+                                        <p class="text-center my-1">Grab now</p>
+                                    </div>
+                                </div>
+                                <div class="cart-item">
+                                    <img src="cpu.webp" alt="" class="">
+                                    <div class="line">
+                                        <p class="text-center my-1">CPU</p>
+                                        <p class="text-center my-1">From Rs 10,999</p>
+                                        <p class="text-center my-1">Grab now</p>
+                                    </div>
+                                </div>
+                                <div class="cart-item">
+                                    <img src="cam.webp" alt="" class="">
+                                    <div class="line">
+                                        <p class="text-center my-1">Cameras</p>
+                                        <p class="text-center my-1">From Rs 1,000</p>
+                                        <p class="text-center my-1">Grab now</p>
+
+                                    </div>
+
+
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+    </main>
+    <footer class="flex-all-center">
+        <p>Copyright &copy; MyCart.com</p>
+    </footer>
+
+</body>
+
+</html>
